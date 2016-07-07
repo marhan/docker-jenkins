@@ -1,7 +1,7 @@
-node('docker') {
+node {
   stage 'Checkout'
   checkout scm
 
   stage 'Build'
-  make build
+  docker build
 }
