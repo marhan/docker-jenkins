@@ -2,6 +2,6 @@ node {
   stage 'Checkout'
   checkout scm
 
-  stage 'Build'
-  docker build
+   stage 'Build'
+   docker.build('jenkins')
 }
