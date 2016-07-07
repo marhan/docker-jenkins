@@ -14,9 +14,9 @@ docker build --build-arg JENKINS_VERSION=$JENKINS_VERSION \
              --no-cache --pull \
              --tag jenkinsci/jenkins:$JENKINS_VERSION .
 
-docker tag -f jenkinsci/jenkins:$JENKINS_VERSION jenkinsci/jenkins:latest
+#docker tag -f jenkinsci/jenkins:$JENKINS_VERSION jenkinsci/jenkins:latest
 
-docker push jenkinsci/jenkins:$JENKINS_VERSION
-docker push jenkinsci/jenkins:latest
+#docker push jenkinsci/jenkins:$JENKINS_VERSION
+#docker push jenkinsci/jenkins:latest
 
 
